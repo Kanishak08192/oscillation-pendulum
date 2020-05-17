@@ -2,6 +2,7 @@ class Pendulum extends BaseClass {
   constructor(x,y){  
     super(x,y,50,50);
     this.image = loadImage("sprites/Untitled.png");
+
   }
 
   display() {
@@ -11,8 +12,8 @@ class Pendulum extends BaseClass {
     }
 
     if(keyCode===13){
-      this.body.position.x = 150;
-      this.body.position.y = 220;
+      this.body.velocityX = 5;
+      //this.body.position.y = 220;
       }
     super.display();
   }
